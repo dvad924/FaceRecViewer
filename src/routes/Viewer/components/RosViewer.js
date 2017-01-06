@@ -1,7 +1,7 @@
 import React from 'react'
 import VideoViewer from './VideoViewer'
 import Select from 'react-select'
-
+import ConfidenceGraph from './ConfidenceGraph'
 export const RosViewer = (props) => {
     console.log('RosViewer',props);
     let topics = Object.keys(props.topics).map((t) => ({
@@ -38,7 +38,9 @@ export const RosViewer = (props) => {
                     options={topics}
                     value={props.selectedTopic}
                     onChange={props.selectTopic} />
+                <ConfidenceGraph />
             </div>
+            
         </div>
     </div>
     )
