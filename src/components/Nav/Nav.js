@@ -21,6 +21,9 @@ export const Nav = () => (
           <li className='nav-item'>
             <Link to='/counter' activeClassName='active' className='nav-link'>Counter</Link>
           </li>
+          <li className='nav-item'>
+              <Link to='/viewer' activeClassName='active' className='nav-link'>Viewer</Link>
+          </li>
           <li className='nav-item btn-group'>
             <NavDropdown title={<span>Test 124</span>}>
               <a className='dropdown-item'>Action</a>
